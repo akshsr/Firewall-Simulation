@@ -1,14 +1,23 @@
-# custom-firewall-simulation
-Python script which simulate aka work as firewall 
+# Firewall Simulation and Packet Blocking
 
-Network Firewall Simulation with Packet Filtering
-This Python script simulates a simple network firewall that filters incoming network packets based on user-defined rules. It blocks specific IP addresses, ports, or protocols, logs blocked packets to a file, and allows traffic that doesn't match any rule. The firewall also includes a simulated server that listens for incoming connections and a simulation of random network traffic for testing purposes.
+This project simulates a simple firewall system that can block packets based on rules for IP addresses, ports, or protocols. The firewall logs all blocked packets and can dynamically modify the blocking rules at runtime.
 
-Features
-Packet Filtering: The firewall can block packets based on source IP, destination IP, port, and protocol (TCP/UDP).
-Logging: All blocked packets are logged to a file (blocked_packets.log) with the reason for the block.
-Real-time Traffic Simulation: Simulates random network traffic to test the firewall's functionality.
-Dynamic Rule Management: You can add and remove block rules dynamically for testing purposes.
-Requirements
-Python 3.x
-The script uses the socket, time, random, logging, and threading modules, which are part of the Python standard library.
+## Features
+
+- **Dynamic Packet Blocking**: Block packets based on IP address, port, or protocol.
+- **Packet Logging**: All blocked packets are logged in a `blocked_packets.log` file.
+- **Simulated Network Traffic**: Generates random traffic to simulate network conditions and test the firewall.
+- **Simulated Server**: A basic server that listens on port 8080, simulating a real-world server environment.
+
+## Requirements
+
+- Python 3.x
+- No external libraries required (standard Python libraries: `socket`, `random`, `time`, `logging`, `threading`)
+
+## Installation
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/akshsr/firewall-simulation.git
+   cd firewall-simulation
